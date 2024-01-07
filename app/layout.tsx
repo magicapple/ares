@@ -26,11 +26,6 @@ export default function RootLayout({
         <meta name="description" content="习惯养成器,大卡养成好习惯" />
 
         <link
-          rel="apple-touch-icon"
-          href="/icons/apple-touch-icon.png"
-          sizes="180x180"
-        />
-        <link
           rel="icon"
           type="image/png"
           href="/icons/icon-192x192.png"
@@ -45,7 +40,9 @@ export default function RootLayout({
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="习惯养成器" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="App Title" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <meta name="mobile-web-app-capable" content="yes" />
 
         <meta name="application-name" content="习惯养成器" />
