@@ -8,7 +8,7 @@ function HomePage() {
     <RootLayout>
       <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-t from-blue-500 to-green-500">
         <div className="text-center bg-white p-8 rounded shadow-lg max-w-md m-4">
-          <h1 className="text-4xl mb-4 truncate">习惯养成器 V0.0.2</h1>
+          <h1 className="text-4xl mb-4 truncate">习惯养成器 V0.0.3</h1>
           <p className="text-xl mb-8 overflow-ellipsis overflow-hidden">
             这是一个习惯养成的项目，你可以添加和查看你的习惯。
           </p>
