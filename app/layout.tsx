@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <>
       <Head>
         <meta
           name="viewport"
@@ -50,7 +50,7 @@ export default function RootLayout({
         />
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </Head>
-      <body className={inter.className}>{children}</body>
-    </html>
+      {children}
+    </>
   );
 }

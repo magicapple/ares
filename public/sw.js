@@ -1,5 +1,4 @@
-var CACHE_NAME = "ares-cache-v1";
-var urlsToCache = ["/", "/styles/main.css", "/script/main.js"];
+var CACHE_NAME = "ares-cache-v2";
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
@@ -17,7 +16,7 @@ self.addEventListener("fetch", (event) => {
         response ||
         fetch(event.request).then((response) => {
           let responseClone = response.clone();
-          caches.open("my-cache").then((cache) => {
+          caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, responseClone);
           });
 
