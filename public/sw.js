@@ -1,4 +1,4 @@
-var CACHE_NAME = "ares-cache-v3";
+var CACHE_NAME = "ares-cache-v4";
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
@@ -21,6 +21,21 @@ self.addEventListener("fetch", (event) => {
           });
 
           return response;
+        })
+      );
+    })
+  );
+});
+
+self.addEventListener("activate", (event) => {
+  var cacheWhitelist = [CACHE_NAME];
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cacheName) => {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
         })
       );
     })
