@@ -1,4 +1,4 @@
-var CACHE_NAME = "ares-cache-v6";
+var CACHE_NAME = "ares-cache-v7";
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
