@@ -40,6 +40,10 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content="App Title" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        ></meta>
         <meta name="mobile-web-app-capable" content="yes" />
 
         <meta name="application-name" content="习惯养成器" />

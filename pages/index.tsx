@@ -6,7 +6,7 @@ import "../styles.css";
 function HomePage() {
   return (
     <RootLayout>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-t from-blue-500 to-green-500">
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-t from-blue-500 to-green-500 text-black">
         <div className="text-center bg-white p-8 rounded shadow-lg max-w-md m-4">
           <h1 className="text-4xl mb-4 truncate">
             习惯养成器 <span className="text-sm text-gray-500">V0.0.5</span>
